@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A propos</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="banniere">
+      <h1 class="titre">Claire Deheegher <br> Développeuse d'applications </h1>
+      
+      <nav>
+        <ul class="container">
+          <li class="lienav element 1" ><a href="accueil.html">Accueil</a></li>
+          <li class="lienav element 2" ><a href="a_propos.html">A propos</a></li>
+          <li class="lienav element 3" ><a href="mon_portfolio.html">Mes réalisations</a></li>
+          <li class="lienav element 4" ><a href="hobby.html">Hobbies</a></li>
+          <li class="lienav element 5" ><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="hamburger-menu">
+          <span class="hamburger-button"> ☰ </span>
+          <div class="nav-links">
+              <a href="accueil.html">Accueil</a>
+              <a href="a_propos.html">A propos</a>
+              <a href="mon_portfolio.html">Mes réalisations</a>
+              <a href="hobby.html">Hobbies</a>
+              <a href="contact.html">Contact</a>
+          </div>
+       </div>
+      </nav>
+    </header>
+
+    <main>
+        <section id="haut" class="intro">
+            <h2 >Introduction</h2>
+            <div class="introbox">
+              <img class="avatar" src="image_site/PXL_20240101_163321914.jpg" alt="photo Claire Deheegher">
+              <p>
+                Vous trouverez ici toutes les informations concernant mes loisirs et mes passions, en dehors de la programmation.
+              </p>
+            </div>
+          </section>
+          <div class="contenersection">
+            <section class="sectiongauche">
+              <div>
+                <h3>Lectures</h3>
+                  <p> La lecture est une de mes grandes passions, au point de tenir un bookstagram sur lequel je raconte mes
+                    aventures livresque ! Vous pouvez me retrouver ici  <br/>
+                    Mes genres favoris :</p>
+                <ul class="textlisting">
+                  <li> Fantasy</li>
+                  <li> Romantasy</li>
+                  <li> Romance</li>
+                </ul>
+              </div>
+            </section>
+    
+            <section class="sectiondroite" >
+              <div>
+                <h3>Crochet</h3>
+                <p>
+                  Le crochet est une nouvelle avanture dans laquelle je me suis lancée il y a peu, mais qui m'apprend 
+                  énormément en termes de softskills. Cela me permet de travailler la patience, la vision dynamique et la concentration sur de longues périodes, 
+                  tout en réalisant des projets.
+                </p>
+                <iframe src="https://www.youtube.com/embed/U2KxX800nXg?play=1&mute=1"></iframe>
+                <p>Info avant de débuter le crochet</p>
+              </div>
+            </section>
+    
+            <section class="sectiongauche" >
+              <div>
+                <h3>Jeux vidéos</h3>
+                <p>Je joue aux jeux vidéos depuis toute petite, avec une diversification au fur et à mesure du temps. <br/> 
+                Ce à quoi je joue actuellement :</p>
+                <table>
+                    <tr>
+                      <th>PC</th>
+                      <th>Switch</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul class="textlisting">
+                          <li>Teamfight tactics</li>
+                          <li>Stardew Valley</li>
+                          <li>Honkai star rail</li>
+                          <li>Civilization VI</li>
+                          <li>Planet Zoo</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul class="textlisting">
+                          <li>Monster Hunter Rise</li>
+                          <li>Animal Crossing</li>
+                          <li>Golden Sun</li>
+                          <li>à venir</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+            </section>
+    
+            <section class="sectiondroite" >
+              <div>
+                <h3>Sports</h3>
+                <p>En plus des loisirs cités ci-dessus, je pratique aussi du sport en salle (plus orientée cardio), 
+                    ainsi que du vélo occasionellement et de la salsa et de la bachata à un niveau intermédiaire. </p>
+                    <iframe src="https://www.youtube.com/embed/VUDTfb6jqvQ?mute=1"></iframe>
+                    <p>Demo de bachata</p>
+              </div>
+            </section>
+          </div>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/claire-deheegher-226560109/"><img src="image_site/LinkedIn_icon.svg.png" alt="logo linkedin" width="40" height="40"></a>
+      <a href=""><img src="image_site/Instagram_icon.png" alt="logo instagram" width="40" height="40"></a>
+      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+      <a class="retour" href="#haut">Return to top</a>
+    </footer>
+
+    <script>
+      //Fade in n scroll
+let elScroll = document.querySelectorAll('.scroll'); // Récupère toutes les classes .scroll
+
+document.onscroll = function() {
+    elScroll.forEach(elScroll => {
+        var positionEl = elScroll.getBoundingClientRect(); // récupère toutes les positions de l'element,
+        console.log(positionEl)
+        var alturaEl = positionEl.top; // position du top
+    
+        if(alturaEl < 450) { // Si la distance du top page est supérieur à 450
+            elScroll.classList.add('scroll-show'); // rajoute la classe .scroll--show
+        }
+    });
+        }
+
+        document.querySelector('.hamburger-button').addEventListener('click', function() {
+   document.querySelector('.nav-links').style.display = 
+   (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+});
+
+    </script>
+  </body>
+</html>

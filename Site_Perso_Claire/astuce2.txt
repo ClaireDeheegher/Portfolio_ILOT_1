@@ -1,0 +1,48 @@
+<div class="contenersection">
+        <section class="sectiongauche">
+          <div>
+            <h3>Lectures</h3>
+<p> La lecture est une de mes grandes passions, au point de tenir un bookstagram sur lequel je raconte mes
+aventures livresque ! Vous pouvez  </br>
+Mes genres favoris :</p>
+<ul>
+<li> Fantasy</li>
+<li> Romantasy</li>
+<li> Romance</li>
+</ul>
+            </a>.</p>
+          </div>
+        </section>
+
+        <section class="sectiondroite" >
+          <div>
+            <h3>Crochet</h3>
+            <p>
+              Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+              soclis natoque penatibus et manis dis parturient montes, nascetur
+              ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+              facilisis semper ac in est.
+            </p>
+            <p>
+              Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+              tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+              ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+              diam iaculis velit, is fringille sem nunc vet mi.
+            </p>
+          </div>
+        </section>
+
+        <section class="sectiongauche" >
+          <div>
+            <h3>Jeux vidéos</h3>
+            
+          </div>
+        </section>
+
+        <section class="sectiondroite" >
+          <div>
+            <h3>Sports</h3>
+            
+          </div>
+        </section>
+      </div>

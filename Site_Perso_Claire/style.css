@@ -1,0 +1,310 @@
+html{
+    scroll-padding-top: 250px;
+}
+h2{
+    color: black; font-size: 2em; font-family: Montserrat;
+}
+h3{
+    color: black;  font-size: 1.5em ; font-family: Montserrat;
+}
+h4{
+    color: rgb(92, 85, 85); font-size: 1em; font-family: Montserrat; font-style: italic;
+}
+p{
+    color: rgb(150, 136, 136); font-size: 1em; font-family: Montserrat;
+}
+li{
+    color: black; font-size: 1em; font-family: Montserrat;  
+}
+body{
+    background-color: #F4EEED;
+    align-self: center;
+    position: relative;
+    background-image: url("./image_site/27435316_7301436.jpg");
+}
+main{
+    width: 75%;
+    margin: auto;
+    margin-top: 250px;
+}
+table {margin: auto; text-align: center;}
+
+header, footer {
+    background-color: #A5A68F; 
+    
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: auto;
+
+    width: 100%;
+    height: 100px;
+}
+header > h1 {margin-bottom: 0%;}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    bottom: 0;
+}
+
+/* Partie header + barre nav */
+
+.titre {
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Great vibes", cursive; font-size: 2em;
+    line-height: normal;
+}
+nav{background-color: #F2D8D5;
+    border-radius: 15px;
+    margin-top: 0px;
+    padding: 5px;
+}
+.container {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F2D8D5;
+    opacity: 0.8;
+    border-radius: 15px;
+    margin-top: 0px;
+    padding: 5px;
+    
+
+}
+
+/*hamburger button*/
+.hamburger-button {
+    background-color: #F2D8D5;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .nav-links {
+    display: none;
+    background-color: #F2D8D5;
+    color: black;
+ }
+ .nav-links a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+ }
+ .nav-links a:hover {
+    background-color: #A5A68F;
+ }
+/* Partie retour en haut de la page (qui plante on ne sait pas pourquoi*/
+
+.retour {
+    position: fixed;
+   bottom: 20px;
+    right: 30px;
+    background-color: #A5A68F;
+    border-radius: 20%;
+}
+/* Partie sur la flex box d'intro en début de page */
+
+.intro{
+    border: #D9B2A9;
+    background-color: rgba(242, 216, 213, 0.9);
+    border-radius: 15px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.textlisting{
+    list-style: none;
+}
+.introbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.avatar {
+    width :100px; height: 100px ;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* Partie liens */
+
+a {
+    outline: none;
+    text-decoration: none
+} 
+a:link
+    {
+        color: black;
+    }
+a:visited 
+    {
+        color: black;
+    }
+a:hover {background-color: #A5A68F; opacity: 0.9; border-radius: 15px; padding: 2px;}
+.lienav {
+    font-family: "Great Vibes", cursive; font-size: 1.5em;
+}
+
+/* Flex box pour le contenu dynamique en contenu */
+
+.sectiongauche, 
+.sectiondroite{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sectiongauche>div,.sectiondroite>div {
+        box-sizing: border-box;
+        border: #D9B2A9;
+        background-color: c;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.sectiongauche > div{
+    align-self: flex-start;
+    
+}
+.sectiondroite > div{
+    align-self: flex-end;
+}
+.frontpage{
+    display: flex;
+    background-color: #F2D8D5;
+    justify-content: center;
+}
+/* Partie du CSS pur l'adaptation mobile*/
+
+
+@media screen and (max-width: 480px) {
+    .sectiongauche div {width: 100%;}
+    .sectiondroite div {width: 100%;}
+    main {width: 100%;}
+    nav {background-color: #A5A68F;}
+    .container {display: none;}
+    iframe {width: 200px ; height: 130px;}
+}
+@media screen and (min-width: 481px) {
+    .sectiongauche div {width: 50%; min-width: 320px;}
+    .sectiondroite div {width: 50%; min-width: 320px;}
+    #hamburger-menu {display: none;} 
+    iframe {width :20vw; height :12vw;} 
+}
+
+/* Partie de CSS en rapport avec l'animation */
+
+.scroll {
+    transform: translateY(-30px);
+   opacity: 0;
+   transition: 1s;
+ }
+ .scroll-show {
+   transform: translateY(0px);
+   opacity: 1;
+ }
+
+ /* Partie du CSS pour la page contact */ 
+
+    
+    .contactez-nous {
+    margin: auto;
+    width: 75%;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    background: rgba(242, 216, 213, 0.9);
+    }
+    
+    .contactez-nous > h1 {
+    font-weight: 500;
+    }
+    
+    .contactez-nous > p {
+    font-weight: 300;
+    }
+    
+    form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+    }
+    
+    form div > label {
+    margin-bottom: 7px;
+    font-weight: 600;
+    }
+    
+    form div > input, form div > select, form div > textarea {
+    background: #FFD9D9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat, "sans-serif";
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+    }
+    
+    form div > input, form div > select {
+    height: 50px;
+    padding-left: 10px;
+    }
+    
+    form div > select {
+    appearance: none;
+    background-size: 15px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+    }
+    
+    form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+    }
+    
+    form div > input::placeholder, form div > textarea::placeholder {
+    color: rgb(92, 85, 85);
+    }
+    
+    form div > select:invalid {
+    color: rgb(92, 85, 85);
+    }
+    
+    form div > select option {
+    background-color: #FFD9D9 ;
+    color: #303030;
+    }
+    
+    form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+    }
+    
+    form button {
+    width: 320px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #FFD9D9;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+    }

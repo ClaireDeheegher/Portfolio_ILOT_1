@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A propos</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="banniere">
+      <h1 class="titre">Claire Deheegher <br>Développeuse d'applications </h1>
+      
+      <nav>
+        <ul class="container">
+            <li class="lienav element 1" ><a href="accueil.html">Accueil</a></li>
+          <li class="lienav element 2" ><a href="a_propos.html">A propos</a></li>
+          <li class="lienav element 3" ><a href="mon_portfolio.html">Mes réalisations</a></li>
+          <li class="lienav element 4" ><a href="hobby.html">Hobbies</a></li>
+          <li class="lienav element 5" ><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="hamburger-menu">
+            <button class="hamburger-button"> ☰ </button>
+            <div class="nav-links">
+                <a href="accueil.html">Accueil</a>
+                <a href="a_propos.html">A propos</a>
+                <a href="mon_portfolio.html">Mes réalisations</a>
+                <a href="hobby.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+            </div>
+         </div>
+      </nav>
+      
+    </header>
+    <main>
+        <section class="intro" id="haut">
+            <h2>Mes contacts</h2>
+            <p></p>
+        </section>
+        <div class="contactez-nous">
+            <h1>Contactez-moi</h1>
+            <p>Un problème, une question, envie de me soutenir ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+            <form action="https://httpbin.org/post" method="post">
+                <div>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Martin" required>
+                </div>
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                </div>
+                <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="probleme-compte">Proposition de projet</option>
+                    <option value="question-produit">Suivi d'un projet </option>
+                    <option value="suivi-commande">Besoin d'informations supplémentaires</option>
+                    <option value="autre">Autre...</option>
+                </select>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer mon message</button>
+                </div>
+            </form>
+            </div>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/claire-deheegher-226560109/"><img src="image_site/LinkedIn_icon.svg.png" alt="logo linkedin" width="40" height="40"></a>
+        <a href=""><img src="image_site/Instagram_icon.png" alt="logo instagram" width="40" height="40"></a>
+        <p>©Copyright 2050 par personne. Tous droits reversés.</p>
+        <a class="retour" href="#haut">Return to top</a>
+      </footer>
+  
+      <script>
+        //Fade in n scroll
+  let elScroll = document.querySelectorAll('.scroll'); // Récupère toutes les classes .scroll
+  
+  document.onscroll = function() {
+      elScroll.forEach(elScroll => {
+          var positionEl = elScroll.getBoundingClientRect(); // récupère toutes les positions de l'element,
+          console.log(positionEl)
+          var alturaEl = positionEl.top; // position du top
+      
+          if(alturaEl < 450) { // Si la distance du top page est supérieur à 450
+              elScroll.classList.add('scroll-show'); // rajoute la classe .scroll--show
+          }
+      });
+          }
+  
+          document.querySelector('.hamburger-button').addEventListener('click', function() {
+     document.querySelector('.nav-links').style.display = 
+     (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
+  });
+  
+      </script>
+    </body>
+  </html>

@@ -1,0 +1,28 @@
+<!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non‑linéaire dans un site. -->
+
+      <form>
+        <input type="search" name="q" placeholder="Rechercher" />
+        <input type="submit" value="Lancer !" />
+      </form>
+  
+<!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+      <aside>
+        <h2>En relation</h2>
+        <ul>
+          <li><a href="#">Combien j'aime être près des rivages</a></li>
+          <li><a href="#">Combien j'aime être près de la mer</a></li>
+          <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
+          <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
+          <li><a href="#">Eh bien…</a></li>
+        </ul>
+      </aside>
+
+<head></head>
+
+<body>
+<header></header>
+<main></main>
+<footer></footer>
+</body>
