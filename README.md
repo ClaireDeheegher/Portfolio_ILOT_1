@@ -16,6 +16,7 @@ projet de lucas.
 - Fort de mes compétences en programmation, je maîtrise différents langages et technologies, avec une expertise particulière dans le développement web. 
 - Mon expérience approfondie en conception et gestion de bases de données me permet d'optimiser efficacement les systèmes et de garantir des performances optimales. 
 - Que ce soit la création d'applications web dynamiques, la manipulation de données complexes ou le développement de solutions sur mesure, je suis capable de répondre aux besoins les plus exigeants dans le domaine du développement web et de la gestion de bases de données.
+<<<<<<< HEAD
 
 ## Gratien Lucas
 
@@ -24,3 +25,23 @@ projet de lucas.
 
 
 Je reviens voir lorem si ipsum
+=======
+- mejzfpzahgkhspghzpghszrngbmklrzbnfoasfvnj&ztlfazùptfgtunegpo$vzer,gvpo&ejr
+
+
+
+## Hamad
+
+>reglage de conflit avec le issuebkjbghedùpj kop*k' g3
+46
++7497
+6786
+nklnk!knlkn
+
+
+
+jkbgjiklgjk:hbjkm:bhjkm:bhjk:
+
+
+klnkmhiohiomhui:h
+>>>>>>> e95e037 (hamad)
